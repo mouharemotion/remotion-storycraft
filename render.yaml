@@ -2,6 +2,7 @@ services:
   - type: web
     name: remotion-storycraft
     env: node
+    nodeVersion: 20.10.0
     plan: free
     buildCommand: npm install
     startCommand: node server.js
@@ -9,4 +10,4 @@ services:
       - key: NODE_ENV
         value: production
       - key: API_KEY
-        generateValue: true
+        value: remotion-secret-key-2025
