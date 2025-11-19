@@ -7,7 +7,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(cors());
 
 const PORT = process.env.PORT || 3000;
-const API_KEY = process.env.API_KEY || 'change-me-in-production';
+const API_KEY = process.env.API_KEY || 'remotion-secret-key-2025';
 
 // Health check endpoint
 app.get('/health', (req, res) => {
